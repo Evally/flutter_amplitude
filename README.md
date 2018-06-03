@@ -1,16 +1,16 @@
 # Flutter implementation of Amplitude SDK
 
 ## Getting Started
-To use this plugin, add flutter_amplitude as a dependency in your pubspec.yaml file.
+To use this plugin, add `flutter_amplitude` as a dependency in your pubspec.yaml file.
 
 ## Example
 
 ```dart
-    FlutterAmplitude.init("your_apy_key", true);
-    FlutterAmplitude.addGeneralProperties(<String, String>{'generalParameter': 'general'});
-    FlutterAmplitude.setUserId("info@sample.com");
-    FlutterAmplitude.setUserProperties(<String, String>{'userParameter': 'user'});
-    FlutterAmplitude.logEvent("EVENT_KEY", <String, String>{'eventParameter': 'event'});
+FlutterAmplitude.init("your_apy_key", true);
+FlutterAmplitude.addGeneralProperties(<String, String>{'generalParameter': 'general'});
+FlutterAmplitude.setUserId("info@sample.com");
+FlutterAmplitude.setUserProperties(<String, String>{'userParameter': 'user'});
+FlutterAmplitude.logEvent("EVENT_KEY", <String, String>{'eventParameter': 'event'});
 ```
 
 # License
