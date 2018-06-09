@@ -1,7 +1,7 @@
 # Flutter implementation of Amplitude SDK
 
 ## Getting Started
-To use this plugin, add flutter_amplitude as a dependency in your pubspec.yaml file.
+To use this plugin, add `flutter_amplitude` as a dependency in your pubspec.yaml file.
 
 ## Example
 
