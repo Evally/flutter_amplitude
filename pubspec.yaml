@@ -1,6 +1,6 @@
 name: flutter_amplitude
 description: Flutter pluging for Amplitude SDK
-version: 0.0.2
+version: 0.0.3
 author: Miguel Catalan<miguel.catalan@eval.ly>
 homepage: https://github.com/Evally/flutter_amplitude
 
