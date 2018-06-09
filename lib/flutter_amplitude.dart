@@ -51,7 +51,9 @@ class FlutterAmplitude {
     Map<String, String> eventArguments = new Map();
     eventArguments.addAll({'eventName': eventName});
     eventArguments.addAll(_generalProperties);
-    eventArguments.addAll(arguments);
+    if (arguments != null) {
+      eventArguments.addAll(arguments);
+    }
 
     _channel.invokeMethod('logEvent', eventArguments);
   }
