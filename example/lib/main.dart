@@ -22,10 +22,10 @@ class _MyAppState extends State<MyApp> {
   init() async {
 
     FlutterAmplitude.init("your_apy_key", true);
-    FlutterAmplitude.addGeneralProperties(<String, String>{'generalParameter': 'general'});
+    FlutterAmplitude.addGeneralProperties({'generalParameterKey': 'generalParameterValue'});
     FlutterAmplitude.setUserId("info@sample.com");
-    FlutterAmplitude.setUserProperties(<String, String>{'userParameter': 'user'});
-    FlutterAmplitude.logEvent("EVENT_KEY", <String, String>{'eventParameter': 'event'});
+    FlutterAmplitude.setUserProperties({'userParameterKey': 'userParameterValue'});
+    FlutterAmplitude.logEvent("EVENT_KEY", {'eventParameterKey': 'eventParameterValue'});
 
     if (!mounted) return;
   }
