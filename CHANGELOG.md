@@ -1,3 +1,7 @@
+## [0.1.1] - 10 April 2019
+
+* Update SDK
+
 ## [0.0.3] - 09 June 2018
 
 * Improve example
