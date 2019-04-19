@@ -28,10 +28,10 @@ class FlutterAmplitudePlugin() : MethodCallHandler {
     override fun onMethodCall(call: MethodCall, result: Result): Unit {
         when {
             call.method == "initAmplitudeSDK" -> {
-                val apiKey = call.argument<String>("apiKey")
-                val enableLogging = call.argument<Boolean>("enableLogging")
-                val enableForegroundTracking = call.argument<Boolean>("enableForegroundTracking")
-                val enableLocationListening = call.argument<Boolean>("enableLocationListening")
+                val apiKey = call.argument<String>("apiKey")!!
+                val enableLogging = call.argument<Boolean>("enableLogging")!!
+                val enableForegroundTracking = call.argument<Boolean>("enableForegroundTracking")!!
+                val enableLocationListening = call.argument<Boolean>("enableLocationListening")!!
                 initSDK(apiKey, enableLogging, enableForegroundTracking, enableLocationListening)
             }
             call.method == "logEvent" -> {
